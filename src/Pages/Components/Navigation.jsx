@@ -3,7 +3,7 @@ export const Navigation = ({ currentPage, navigate }) => (
       <button onClick={() => navigate("prev")} disabled={currentPage === 1} className="navButton">
         &lt;
       </button>
-      <span className="navStatus">{currentPage} of 4</span>
+      <span className="navStatus"> {currentPage} of 4</span>
       <button onClick={() => navigate("next")} disabled={currentPage === 4} className="navButton">
         &gt;
       </button>

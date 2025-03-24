@@ -19,15 +19,20 @@ const App = () => {
     };
   
     return (
-      <div className="appContainer  min-h-screen bg-white mx-auto">
-        <div className="mobileUI">
+      <div className="appContainer min-h-screen bg-gray-200 mx-auto ">
+        <div className="mobileUI p-3">
           {currentPage === 1 && <WelcomePage />}
           {currentPage === 2 && <SigninPage />}
           {currentPage === 3 && <SignupPage />}
           {currentPage === 4 && <AccountSettings />}
           
         </div>
+
+        {/* slider design */}
+
+        <div className="bg-green-800 text-white">
         <Navigation currentpage={currentPage} navigate={navigate} />
+        </div>
       </div>
     );
   };
